@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYP Personal Project - Entrepreneurship</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+scroll-behavior:smooth;
+overflow-x:hidden;
+}
+
+#loader{
+position:fixed;
+width:100%;
+height:100vh;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+color:gold;
+font-size:28px;
+z-index:9999;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:black;
+padding:15px;
+border-bottom:2px solid gold;
+text-align:center;
+z-index:1000;
+}
+
+header a{
+color:gold;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+header a:hover{color:white;}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+color:gold;
+font-size:48px;
+}
+
+.section{
+padding:100px 20px;
+max-width:1000px;
+margin:auto;
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+h2{
+color:gold;
+border-bottom:2px solid gold;
+padding-bottom:10px;
+}
+
+.card{
+background:#1a1a1a;
+padding:25px;
+margin:20px 0;
+border-left:5px solid gold;
+border-radius:8px;
+line-height:1.7;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.stat{text-align:center;margin:20px;}
+.stat h3{color:gold;font-size:40px;}
+
+footer{
+background:black;
+padding:30px;
+text-align:center;
+border-top:2px solid gold;
+}
+</style>
+</head>
+
+<body>
+
+<div id="loader">Loading Project...</div>
+<canvas id="particles"></canvas>
+
+<header>
+<a href="#about">Entrepreneurship</a>
+<a href="#drop">Dropshipping</a>
+<a href="#customer">Target Customer</a>
+<a href="#research">Research</a>
+<a href="#stats">Stats</a>
+<a href="#reflection">Reflection</a>
+</header>
+
+<div class="hero">
+<div>
+<h1>Entrepreneurship & Dropshipping</h1>
+<p>This website explains what I learned from January to March about starting a business and selling online. It shows my research, planning, and growth during this project.</p>
+</div>
+</div>
+
+<section id="about" class="section">
+<h2>What Is Entrepreneurship?</h2>
+<div class="card">
+
+<p>Entrepreneurship means starting a business to solve a problem and earn money from it. It is when someone has an idea and turns it into something real. This could be selling products, offering services, or creating something new that helps people.</p>
+
+<p>According to websites like Investopedia and Forbes, entrepreneurs take risks. This means they are not guaranteed success. They must test ideas first and see if people actually want what they are selling.</p>
+
+<p>Entrepreneurship is not just about money. It is also about creativity, leadership, and solving real problems. For example, if people struggle to find affordable gym equipment, someone might create a cheaper online store to help them.</p>
+
+<p>Some businesses fail because they do not plan carefully. That is why research and planning are very important before starting.</p>
+
+</div>
+</section>
+
+<section id="drop" class="section">
+<h2>What Is Dropshipping?</h2>
+<div class="card">
+
+<p>Dropshipping is a way to sell products online without keeping them in your house. When a customer buys something from your website, you send the order to a supplier. The supplier then ships the product directly to the customer.</p>
+
+<p>This means you do not need to buy a lot of products first. According to Shopify, this lowers the money needed to start. That is why many beginners choose this method.</p>
+
+<p>However, dropshipping still has challenges. You must choose the right product. You must find a trusted supplier. If the supplier is slow or sends bad products, customers will blame you.</p>
+
+<p>You also need to learn marketing. Without good ads or social media promotion, people will not find your store.</p>
+
+</div>
+</section>
+
+<section id="customer" class="section">
+<h2>Who Is My Target Customer?</h2>
+<div class="card">
+
+<p>A target customer is the main group of people you want to sell to. You cannot sell to everyone. You must focus on people who actually need your product.</p>
+
+<p>For example, if I sell fitness products, my target customers could be teenagers and young adults who go to the gym and want affordable tools.</p>
+
+<p>A target customer usually has:</p>
+
+<ul>
+<li>An age group</li>
+<li>Specific interests</li>
+<li>A certain budget</li>
+<li>A problem they want solved</li>
+</ul>
+
+<p>If I understand my customer, I can make better ads and choose the right platform like Instagram or TikTok. If I do not understand them, I might waste money advertising to the wrong people.</p>
+
+<p>Knowing your customer increases your chance of success because your product matches their real needs.</p>
+
+</div>
+</section>
+
+<section id="research" class="section">
+<h2>Research & Planning</h2>
+<div class="card">
+
+<p>During this project, I asked many questions. What problem am I solving? Who will help me? How much money do I need? What are my biggest risks?</p>
+
+<p>I compared websites like Investopedia, Entrepreneur.com, Forbes, and the U.S. Small Business Administration. Most of them explained entrepreneurship in a similar way. That helped me trust the information.</p>
+
+<p>I also checked if the websites had too many ads or pushed opinions. Most of them focused only on business topics.</p>
+
+<p>I learned that businesses fail when they do not test ideas or when they ignore risks. Planning helps reduce mistakes.</p>
+
+<p>Money is also important. A business makes money by selling a product for more than it costs to get it. The extra money is called profit.</p>
+
+</div>
+</section>
+
+<section id="stats" class="section">
+<h2>Business Statistics</h2>
+<div class="stats">
+<div class="stat">
+<h3 id="num1">0</h3>
+<p>% of new jobs created by small businesses</p>
+</div>
+<div class="stat">
+<h3 id="num2">0</h3>
+<p>% of startups that fail in first year</p>
+</div>
+<div class="stat">
+<h3 id="num3">0</h3>
+<p>Billion dollar e-commerce industry</p>
+</div>
+</div>
+</section>
+
+<section id="reflection" class="section">
+<h2>What I Learned</h2>
+<div class="card">
+
+<p>I learned that starting a business is harder than it looks. It takes research, planning, and patience.</p>
+
+<p>I also learned that time management is important. I had to follow a timeline from January to March. At first, I delayed building the website, but I adjusted and finished it.</p>
+
+<p>This project helped me improve my research skills because I compared sources instead of trusting just one website.</p>
+
+<p>Overall, this project showed me that entrepreneurship requires effort and smart thinking.</p>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 MYP Personal Project | Educational Use Only</p>
+</footer>
+
+<script>
+window.onload=function(){
+setTimeout(()=>{document.getElementById("loader").style.display="none";},1500);
+};
+
+const sections=document.querySelectorAll(".section");
+window.addEventListener("scroll",()=>{
+sections.forEach(section=>{
+if(section.getBoundingClientRect().top<window.innerHeight-100){
+section.classList.add("show");
+}
+});
+});
+
+function animate(id,end){
+let count=0;
+let speed=end/100;
+let interval=setInterval(()=>{
+count+=speed;
+if(count>=end){
+count=end;
+clearInterval(interval);
+}
+document.getElementById(id).innerText=Math.floor(count);
+},20);
+}
+
+window.addEventListener("scroll",()=>{
+if(document.getElementById("stats").getBoundingClientRect().top<window.innerHeight){
+animate("num1",64);
+animate("num2",20);
+animate("num3",600);
+}
+});
+
+const canvas=document.getElementById("particles");
+const ctx=canvas.getContext("2d");
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+for(let i=0;i<80;i++){
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2,
+dx:(Math.random()-0.5),
+dy:(Math.random()-0.5)
+});
+}
+
+function draw(){
+ctx.clearRect(0,0,canvas.width,canvas.height);
+ctx.fillStyle="gold";
+particles.forEach(p=>{
+ctx.beginPath();
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+ctx.fill();
+p.x+=p.dx;
+p.y+=p.dy;
+});
+requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+</body>
+</html>
